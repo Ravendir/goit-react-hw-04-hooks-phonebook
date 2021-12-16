@@ -61,7 +61,7 @@ const App = () => {
     <>
       <ContactForm onSubmit={onSubmitName} />
       <h2 className={styles.contactForm}>Contacts</h2>
-      <Filter value={filter} onChangeFilter={changeFilter} />
+      <Filter value={filter} onChangeValue={changeFilter} />
       {filterContacts() ? (
         <ContactList
           contacts={filterContacts()}
